@@ -1,0 +1,11 @@
+version: '1.0'
+services:
+    php-apache-environment:
+        container_name: php-apache-ci
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/var/www/html/
+        ports:
+            - 7700:80
