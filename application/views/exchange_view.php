@@ -111,9 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 let toCurrency = document.getElementById("to").value;
                 this.firstInputSelected = true;
                 if(this.isNumeric(amount)) {
-                    if(fromCurrency !== 'From' && toCurrency !== 'To') {
-                        this.convertCurrency(fromCurrency, toCurrency, amount);
-                    }
+                    this.convertCurrency(fromCurrency, toCurrency, amount);
                 }
             },
             calcInput_2: function () {
@@ -122,9 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 let toCurrency = document.getElementById("from").value;
                 this.firstInputSelected = false;
                 if(this.isNumeric(amount)) {
-                    if(fromCurrency !== 'From' && toCurrency !== 'To') {
-                        this.convertCurrency(fromCurrency, toCurrency, amount);
-                    }
+                    this.convertCurrency(fromCurrency, toCurrency, amount);
                 }
             },
             convertCurrency: function (fromCurrency, toCurrency, amount) {
