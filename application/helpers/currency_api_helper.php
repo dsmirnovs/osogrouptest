@@ -1,6 +1,6 @@
 <?php
 
-const API_KEY = 'c58239668b-e02021b3ef-s43w7o';
+const API_KEY = '414115e10d-fbb3d19882-s4h2hf';
 function getAllRates() {
     $apikey = API_KEY;
     $json = file_get_contents("https://api.fastforex.io/fetch-all?from=EUR&api_key={$apikey}");
